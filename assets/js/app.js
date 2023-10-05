@@ -1,12 +1,7 @@
-
 //En este script se recupera una API para poder traer información de distintos usuarios del JSON de Github users. En este caso, de stolinski.En lo que se recupera, muestra un mensaje de Cargando. En el caso de que no lo recupere, mostrará un mensaje error. 
-
-
 
 //Para refactorizar, se elimina la variable EndUser ya que sería directamente a añadirle ese texto al primer endPoint declarado, y al final mejor que se sume el nombre del usuario
 const baseEndpoint = ('https://api.github.com/users');
-
-
 
 /*
 Se declaran la variables de nombre del usuario, blog para guardarlas y traspasarlas al html mediante el queryselector
@@ -28,7 +23,7 @@ async function displayUser(username) {
  
   // Usamos el try para hacer las dos llamadas
   try{
-    
+
     //Se usa el await para primero esperar a recibir información de la petición, para después consultarlo en el log. Se guarda en response la concatenación del link de la API con el nombre del usuario que se recibe en el parámetro de la función.
     const response = await fetch(`${baseEndpoint}/${username}`);
 
@@ -57,7 +52,6 @@ function handleError(err) {
 
   //Se añadió el $ a la variable n, para hacer el match con su declaración al inicio del script, y así traspasar la información al HTML en dado caso. y se agregaron 
   $name.textContent = `Algo salió mal: ${err}`;
-
 }
 
 
