@@ -1,6 +1,6 @@
 /* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
-/* Comentario de Ale: se separan todos los estilos para poder tener una visualización más clara de sus atributos y valores. Además de que se añadió el ; faltantes a la mayoría de los atributos */
+/* Se separan todos los estilos para poder tener una visualización más clara de sus atributos y valores. Además de que se añadió el ; faltantes a la mayoría de los atributos */
 
 
 
@@ -281,7 +281,7 @@ input:not([type="checkbox"]):not([type="radio"]), textarea, select {
 } 
 
 
-/* Ale: Se pusieron las etiquetas del mismo tipo en la misma línea*/
+/* Se pusieron las etiquetas del mismo tipo en la misma línea*/
 h1,h2, h3, h4, h5, h6 {
   color: white;
   margin-top: 0;
@@ -300,5 +300,4 @@ h1,h2, h3, h4, h5, h6 {
   text-shadow: none;
 
 } 
-
 
